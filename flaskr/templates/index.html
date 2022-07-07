@@ -18,7 +18,19 @@
               <div class="p-3 mb-2 bg-secondary text-white">
                 <p> synchroniser airtable et le fichier de configuration du monitoror </p>
               </div>
-              <form action="/" method="post">
+
+              <form action="/" method="post" class="form-inline pt-5">
+
+                <p> Choisir le fichier que vous voulez synchronisation :</p>
+                <div class="form-group mb-2">
+                  <select class="form-select" aria-label="Default select example" name="selected_screen">
+                    <option selected value="default"> Default screen </option>
+                    <option value="screen1">Screen 1</option>
+                    <option value="screen2">Screen 2</option>
+                    <option value="screen3">Screen 3</option>
+                  </select>
+                </div>
+
                 <button name="syncBtn" class="btn btn-success rounded" type="submit">Sync</button>
               </form>
 

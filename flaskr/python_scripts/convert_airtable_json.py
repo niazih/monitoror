@@ -1,6 +1,5 @@
 
 
-
 class AirtableToJsonConfig:
 
     # clé pour chercher les columns de l'airtable

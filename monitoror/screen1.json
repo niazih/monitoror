@@ -1,17 +1,1 @@
-
-{
-    "version": "2.0",
-    "columns": 2,
-    "tiles": [
-      {
-        "type": "PING",
-        "label": "Localhost",
-        "params": { "hostname": "127.0.0.1" }
-      },
-      {
-        "type": "PORT",
-        "label": "Dev server",
-        "params": { "hostname": "127.0.0.1", "port": 8080 }
-      }
-    ]
-  }
+{"version": "2.0", "columns": 8, "tiles": [{"type": "GROUP", "label": "screen1", "tiles": [{"type": "PING", "label": "GW", "params": {"hostname": "82.115.212.113"}, "configVariant": "default"}, {"type": "PING", "label": "DSI_VPN_ADMIN", "params": {"hostname": "82.115.212.116"}, "configVariant": "default"}, {"type": "PING", "label": "NRO_henj", "params": {"hostname": "82.115.212.121"}, "configVariant": "default"}, {"type": "PING", "label": "NRO_after", "params": {"hostname": "82.115.212.122"}, "configVariant": "default"}, {"type": "PING", "label": "NRO_libre", "params": {"hostname": "82.115.212.123"}, "configVariant": "default"}, {"type": "PING", "label": "NRO_libre", "params": {"hostname": "82.115.212.124"}, "configVariant": "default"}, {"type": "PING", "label": "default_device_label", "params": {"hostname": "82.115.212.126"}, "configVariant": "default"}]}]}
