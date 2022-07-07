@@ -28,14 +28,23 @@ waitforcancel() {
 }
 
 
+# GET le dossier ou le script se trouve
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+
+
 # The actual commands we want to execute.
 
-
-source "/home/user/Final_Project/venv/bin/activate"
-
 read -sp "Entrez le bon mot de passe d'utilisateur $USER: " passvar
-gunicorn --bind 0.0.0.0:5000 --chdir /home/user/Final_Project/flaskr wsgi:app & \
-echo $passvar | sudo -S /home/user/Final_Project/monitoror/monitoror
+
+# Lancement de serveur flask en utilisent gunicorn
+gunicorn --bind 0.0.0.0:5000 --chdir $SCRIPT_DIR/flaskr wsgi:app & \
+
+
+# Lancement de serveur monitoror 
+echo $passvar | sudo -S $SCRIPT_DIR/monitoror/monitoror
+
+
+
 
 # Trap the input and wait for the script to be cancelled.
 waitforcancel

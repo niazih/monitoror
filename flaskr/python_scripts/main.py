@@ -17,12 +17,12 @@ monitoror_columns_number = 8
 
 
 # Airtable API parametre
-airtable_api_key = "keysoMHiR5OdPaLtk"
-airtable_base_id = "appGMo05NrFZVKB15"
+airtable_api_key = "api_key"
+airtable_base_id = "base_id"
 
 
 # Chemin où les fichier de configuration d'écran se trouve
-screens_path = '../monitoror/'
+screens_path = '../monitoror/screens/'
 
 # Dictionaire qui a tous les parametres nécessaire d'un SCREEN
 screen_dict = {
@@ -41,8 +41,9 @@ screen_dict = {
     'screen3' :{
         'screen_name': 'screen3.json',
         'airtable_table_name': 'screen3'
-    },
+    }
 }
+
 
 
 
